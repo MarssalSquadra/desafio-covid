@@ -29,7 +29,8 @@ Informações importantes:
 ● Entrega do desafio: Publique o desafio no seu GitHub e nos envie o link do repositório público.
 
 ● É importante que seu projeto contenha vários commits, demonstrando como foi criado sua aplicação. 
-Bônus (não é obrigatório):
+
+<<<< Bônus (não é obrigatório) >>>>:
 
 ● Utilizar algum package para gerenciar estado não visto no bootcamp.
 
