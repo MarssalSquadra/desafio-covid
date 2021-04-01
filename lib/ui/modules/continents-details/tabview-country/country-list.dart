@@ -29,36 +29,35 @@ class CountryList extends StatelessWidget {
           itemCount: _continentsDetailsController.countries.length,
           itemBuilder: (context, index) {
             var country = _continentsDetailsController.countries[index];
-            return InkWell(
-                onTap: () =>
-                    _continentsDetailsController.onTapCardCountry(country),
-                child: Container(
-                  margin: EdgeInsets.only(bottom: 4),
-                  child: Card(
-                    child: ListTile(
-                      title: Container(
-                        padding: EdgeInsets.only(left: 10),
-                        child: Text(
-                          country,
-                          style: TextStyle(
-                            color: AppThemes.color_0xF11E2243,
-                            fontSize: 17,
-                          ),
-                        ),
-                      ),
-                      trailing: InkWell(
-                        onTap: () => _continentsDetailsController
-                            .onTapCardCountry(country),
-                        borderRadius: BorderRadius.circular(35),
-                        child: Icon(
-                          Icons.arrow_forward_ios_outlined,
-                          color: AppThemes.color_0xFFC7C7CC,
-                          size: 16,
-                        ),
+            return Container(
+              margin: EdgeInsets.only(bottom: 4),
+              child: Card(
+                child: ListTile(
+                  onTap: () =>
+                      _continentsDetailsController.onTapCardCountry(country),
+                  title: Container(
+                    padding: EdgeInsets.only(left: 10),
+                    child: Text(
+                      country,
+                      style: TextStyle(
+                        color: AppThemes.color_0xF11E2243,
+                        fontSize: 17,
                       ),
                     ),
                   ),
-                ));
+                  trailing: InkWell(
+                    onTap: () =>
+                        _continentsDetailsController.onTapCardCountry(country),
+                    borderRadius: BorderRadius.circular(35),
+                    child: Icon(
+                      Icons.arrow_forward_ios_outlined,
+                      color: AppThemes.color_0xFFC7C7CC,
+                      size: 16,
+                    ),
+                  ),
+                ),
+              ),
+            );
           },
         ),
       ),
