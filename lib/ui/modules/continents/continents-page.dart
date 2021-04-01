@@ -65,7 +65,7 @@ class ContinentsPage extends StatelessWidget {
                         ),
                       ),
                 secondChild: CustomLoading(
-                  exibir: _continentsController.firtTime,
+                  exibir: _continentsController.firstTime,
                 ),
               ),
             )));

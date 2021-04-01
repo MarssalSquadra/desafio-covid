@@ -21,7 +21,7 @@ class CountryFlag extends StatelessWidget {
         : Align(
             alignment: Alignment.topCenter,
             child: Container(
-              decoration: AppPatterns.defaulttBoxDecoration(),
+              decoration: AppPatterns.defaulttBoxDecoration(hasBoxShadow: true),
               child: ClipRRect(
                   borderRadius: BorderRadius.circular(AppPatterns.radius),
                   child: Image.network(

@@ -7,7 +7,7 @@ import '../../util/util.dart';
 class ContinentsController extends GetxController {
   List<Continent> _continents = <Continent>[].obs;
   var loading = true.obs;
-  var firtTime = true;
+  var firstTime = true;
 
   ContinentsController(this._continentProvider);
   List<Continent> get continents => [..._continents];
@@ -24,7 +24,7 @@ class ContinentsController extends GetxController {
     _continents.clear();
     _continents.addAll(retorno);
     loading.value = false;
-    firtTime = false;
+    firstTime = false;
     update();
   }
 
