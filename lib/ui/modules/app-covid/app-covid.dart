@@ -28,6 +28,9 @@ class _AppCovidState extends State<AppCovid> {
         textTheme: GoogleFonts.ubuntuTextTheme(
           Theme.of(context).textTheme,
         ),
+        primaryTextTheme: GoogleFonts.ubuntuTextTheme(
+          Theme.of(context).textTheme,
+        ),
       ),
       getPages: AppRoutes.getRoutes(),
     );
