@@ -19,7 +19,7 @@ class _AppCovidState extends State<AppCovid> {
       initialBinding: AppCovidBinding(),
       debugShowCheckedModeBanner: false,
       title: 'Desafio Covid',
-      initialRoute: AppRoutes.SPLASH,
+      initialRoute: AppRoutes.CONTINENTS,
       theme: ThemeData(
         primarySwatch: AppThemes.primaryColor,
         accentColor: AppThemes.accentColor,
